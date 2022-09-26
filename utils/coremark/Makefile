@@ -84,7 +84,6 @@ define Package/coremark/install
 	$(INSTALL_DIR) $(1)/etc
 	$(INSTALL_BIN) ./coremark.sh $(1)/etc/
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./coremark $(1)/etc/uci-defaults/xxx-coremark
 endef
 
 $(eval $(call BuildPackage,coremark))
