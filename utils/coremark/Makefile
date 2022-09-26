@@ -88,11 +88,4 @@ define Package/coremark/install
 	$(INSTALL_BIN) ./coremark $(1)/etc/uci-defaults/xxx-coremark
 endef
 
-define Package/coremark/postinst
-#!/bin/sh
-[ -n "$${IPKG_INSTROOT}" ] || sed -i '/coremark/d' /etc/crontabs/root
-[ -n "$${IPKG_INSTROOT}" ] || echo "0 4 * * * /etc/coremark.sh" >> /etc/crontabs/root
-[ -n "$${IPKG_INSTROOT}" ] || crontab /etc/crontabs/root
-endef
-
 $(eval $(call BuildPackage,coremark))
