@@ -1347,6 +1347,7 @@ dynssl.com
 dynu.com
 dynu.net
 dynupdate.no-ip.com
+dynupdate6.no-ip.com
 dzze.com
 e-classical.com.tw
 e-gold.com
